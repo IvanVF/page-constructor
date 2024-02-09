@@ -1,0 +1,55 @@
+<div class="div__mode-btn-wrapper">
+  <div class="div__r-sbar-mode" (click)="chooseCommonTab()" [ngClass]="{'div__left-tab-chosen': isCommonTab}"><span>Общее</span></div>
+  <div class="div__r-sbar-mode" (click)="chooseDescriptionTab()" [ngClass]="{'div__right-tab-chosen': !isCommonTab}"><span>Описание</span></div>
+</div>
+<div *ngIf="isCommonTab" class="div__common-container">
+  <label class="form-label">Текст элемента</label>
+  <input class="input-group-text input__parameter" id="input_element_inner_text" type="text"   [(ngModel)]="elementInnerText">
+
+  <div class="d-flex justify-content-center">
+    <div>
+      <label class="form-label">Высота</label>
+      <input class="input-group-text input__parameter" id="input_element_height"     type="number" [(ngModel)]="elementHeight">
+    </div>
+    <div>
+      <label class="form-label">Ширина</label>
+      <input class="input-group-text input__parameter" id="input_element_width"      type="number" [(ngModel)]="elementWidth">
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <div>
+      <label class="form-label">Цвет элемента</label>
+      <input class="input__color-selector input__color-selector"    type="color" [(ngModel)]="elementBackgroundColor">
+    </div>
+    <div>
+      <label class="form-label">Цвет текста</label>
+      <input class="input__color-selector"     type="color" [(ngModel)]="elementTextColor">
+    </div>
+  </div>
+
+  <button class="btn btn-success" (click)="applyChanges()" style="margin: 10px">Применить</button>
+
+  <label class="form-label">*Для выделения элемента нажмите на нём ПКМ</label>
+</div>
+
+<div *ngIf="!isCommonTab" class="div__common-container">
+  <label class="form-label">Тип ТС</label>
+  <input class="input-group-text input__parameter" type="text"   [(ngModel)]="carText">
+
+  <label class="form-label">Описание</label>
+  <input class="input-group-text input__parameter" type="text"   [(ngModel)]="carDescription">
+
+  <label class="form-label">Значение по умолчанию</label>
+  <input class="input-group-text input__parameter" type="text"   [(ngModel)]="carDefaultValue">
+
+  <label class="form-label">Справочник</label>
+  <input class="input-group-text input__parameter" type="text"   [(ngModel)]="carDirectory">
+
+  <label class="form-label">Обязательность</label>
+  <br>
+  <label class="label__switcher switcher" id="library_switcher">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+  </label>
+</div>

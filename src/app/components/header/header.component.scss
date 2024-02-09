@@ -1,0 +1,57 @@
+@import "src/variables";
+
+.header {
+  text-align: center;
+  font-size: 20px;
+  background-color: #F0F0F0;
+  border: solid 1px $border_grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div__left-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.div__user-icon {
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  background-color: #000000;
+  opacity: 50%;
+  border-radius: 60px;
+  padding: 0px 12px 0px 12px;
+}
+.img__user-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.div__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 55px;
+  min-height: 55px;
+  border-left: solid 1px $border_grey;
+  border-right: solid 1px $border_grey;
+  cursor: pointer;
+}
+.div__img-wrapper:hover {
+  background-color: #949494;
+}
+
+.span__name {
+  margin: 5px 8px 5px 5px;
+  color: #205A52;
+  font-size: 18px;
+}

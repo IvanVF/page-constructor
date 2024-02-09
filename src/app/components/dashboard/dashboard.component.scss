@@ -1,0 +1,48 @@
+@import "src/variables";
+
+.div__working-field-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid 1px $border_grey;
+}
+
+.div__sidebar-container {
+  width: 280px;
+}
+
+.div__working-place-container {
+  width: 100%;
+}
+
+// Стили сайдбаров
+.div__mode-btn-wrapper {
+  display: flex;
+}
+
+.div__mode {
+  width: 50%;
+  height: 55px;
+  color: #448D83;
+  background-color: #F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: solid 1px $border_grey;
+  border-top: none;
+}
+.div__left-tab-chosen {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 14px;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+.div__right-tab-chosen {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 14px;
+  border: none;
+}

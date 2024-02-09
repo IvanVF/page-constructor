@@ -1,0 +1,44 @@
+@import "src/variables";
+
+label {
+  color: #A5A5A5;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.div__common-container {
+  border-left: solid 1px $border_grey;
+  height: 100%;
+}
+
+.div__r-sbar-mode {
+  width: 50%;
+  height: 55px;
+  color: #448D83;
+  background-color: #F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: solid 1px $border_grey;
+  border-top: none;
+}
+
+
+.input__parameter {
+  width: 90%;
+  margin: auto;
+}
+
+.btn-apply {
+  background-color: #448D83;
+  color: #FFF;
+  border-radius: 8px;
+  height: 32px;
+  margin: 10px !important;
+}
+
+.input__color-selector {
+  margin-left: 30px;
+}
+

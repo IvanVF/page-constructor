@@ -1,0 +1,61 @@
+<body>
+<div class="library-container">
+  <div class="library-element" (click)="createPageElement()"><img src="../../../../assets/images/element-page.svg"></div>
+  <div class="library-element" (click)="createBtnElement()"><img src="assets/images/element-btn.svg"></div>
+  <div class="library-element" (click)="createTextElement()"><img src="assets/images/element-text.svg"></div>
+  <div class="library-element" (click)="createTextAreaElement()"><img src="assets/images/element-text-field.svg"></div>
+  <div class="library-element"><img src="assets/images/element-table.svg"></div>
+  <div class="library-element" (click)="createSelectElement()"><img src="assets/images/element-combo-box.svg"></div>
+  <div class="library-element" (click)="createLinkElement()"><img src="assets/images/element-link.svg"></div>
+  <div class="library-element" (click)="createSwitcherElement()"><img src="assets/images/element-switcher.svg"></div>
+  <div class="library-element" (click)="createCheckBoxElement()"><img src="assets/images/element-check-box.svg"></div>
+  <div class="library-element" (click)="createStickerElement()"><img src="assets/images/element-sticker.svg"></div>
+</div>
+
+<!--  Библиотека элементов -->
+<div class="div_page-element" id="library_page"></div>
+<button class="btn-element"                         id="library_button"         >Кнопка</button>
+<input class="input__text-element"  type="text"     id="library_input"          placeholder="Текст...">
+<textarea class="textarea-element"                  id="library_textarea"       >Текстовое поле</textarea>
+<div class="select-element" id="select_library" style="width: 200px">
+  <select class="form-select" style="width: 200px">
+    <option>Пункт 1</option>
+    <option>Пункт 2</option>
+    <option>Пункт 3</option>
+  </select>
+</div>
+<input class="input__link-element"  type="text"     id="library_link"          placeholder="Ссылка...">
+<label class="label__switcher switcher" id="library_switcher">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+<input class="form-check-input checkbox-element" type="checkbox" id="library_checkbox" name="scales" checked />
+<textarea class="sticker-element"                  id="library_sticker"       >Стикер</textarea>
+
+
+<dialog #dialog_choose_element_name id="dialog_choose_element_name" class="dialog">
+
+  <div class="card">
+    <div class="card-header">
+      <h6 class="card-title m-0">Смена названия элемента:</h6>
+    </div>
+
+    <div class="card-body">
+      <div class="container ">
+        <div class="row row__generate_act align-items-center my-2">
+          <input type="text" class="form-control col-8" placeholder="Введите новое название" [(ngModel)]="newElementName">
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <button class="btn btn-outline-secondary mr-2">Применить</button>
+      <button class="btn btn-outline-secondary" (click)="dialog_choose_element_name.close()">Отмена</button>
+    </div>
+
+  </div>
+</dialog>
+
+</body>
+
+

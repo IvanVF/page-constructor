@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 100;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("assets/fonts/Noto Sans/NotoSans-Extra-Light.ttf"),
+    /* Если не получилось, загрузит woff2 */
+  url("assets/fonts/Noto Sans/NotoSans-Light.ttf") format("ttf")
+}
